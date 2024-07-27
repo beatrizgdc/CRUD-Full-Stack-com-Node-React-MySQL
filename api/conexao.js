@@ -1,4 +1,4 @@
-import mysql from "mysql2";
+import mysql from "mysql";
 
 export const conexao = mysql.createConnection({
     host: "localhost",
