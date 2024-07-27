@@ -9,5 +9,5 @@ app.use(cors());
 
 app.use("/", userRoutes);
 
-const PORT = process.env.PORT || 8800;
-app.listen(PORT, '127.0.0.1', () => {});
+
+app.listen(8800);
