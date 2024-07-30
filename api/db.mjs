@@ -1,10 +1,12 @@
+import mysql from 'mysql';
 
-module.exports = {
-  mysql: {
-    connectionLimit: 100,
-    host: 'localhost',
-    user: 'root',
-    password: '123456',
-    database: 'crud'
-  }
-};
+// Configuração do pool de conexões MySQL
+const mysqlConfig = mysql.createPool({
+  connectionLimit: 100,
+  host: 'localhost',
+  user: 'root',
+  password: '123456',
+  database: 'crud'
+});
+
+export { mysqlConfig };
