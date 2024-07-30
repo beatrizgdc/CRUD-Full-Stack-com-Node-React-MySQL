@@ -1,6 +1,5 @@
 import mysql from 'mysql2/promise';
 
-// Configura o pool de conexões
 export const mysqlConfig = mysql.createPool({
   connectionLimit: 10,
   host: 'localhost',

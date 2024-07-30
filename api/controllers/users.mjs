@@ -1,4 +1,4 @@
-import mysqlConfig from '../db.mjs';  
+import { mysqlConfig } from '../db.mjs';  
 
 export const getUsers = async (_, res) => {
   try {
