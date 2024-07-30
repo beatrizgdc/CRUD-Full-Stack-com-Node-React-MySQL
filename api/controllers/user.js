@@ -1,4 +1,5 @@
-import { db } from "../db.js";
+// Importa a configuração do banco de dados
+import { mysqlConfig } from './db.mjs'; 
 
 export const getUsers = (_, res) => {
     const q = "SELECT * FROM usuarios";
