@@ -1,12 +1,10 @@
-import mysql from 'mysql';
+import mysql from 'mysql2/promise';
 
-// Configuração do pool de conexões MySQL
-const mysqlConfig = mysql.createPool({
-  connectionLimit: 100,
+// Configura o pool de conexões
+export const mysqlConfig = mysql.createPool({
+  connectionLimit: 10,
   host: 'localhost',
   user: 'root',
   password: '123456',
-  database: 'crud'
+  database: 'crud',
 });
-
-export { mysqlConfig };
