@@ -1,6 +1,6 @@
 import express from 'express';
 import http from 'http';
-import userRoutes from './routes/userRoutes.mjs';
+import userRoutes from './routes/users.mjs';
 
 const app = express();
 const server = http.createServer(app);
@@ -9,9 +9,6 @@ const server = http.createServer(app);
 app.use(express.json());
 
 // Usa o roteador de usuários
-app.use('/api/users', userRoutes);
+app.use('/api/routes', userRoutes);
 
-// Inicia o servidor na porta 3000
-server.listen(3000, () => {
-  console.log('Server listening on port 3000');
-});
+server.listen();
