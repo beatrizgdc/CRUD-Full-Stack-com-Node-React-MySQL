@@ -5,9 +5,10 @@ const createPool = () => {
     console.log('Tentando criar uma pool de conexões com o banco de dados...');
     const pool = mysql.createPool({
       connectionLimit: 10,
-      host: 'localhost',
+      host: '127.0.0.1',
+      port: '3306',
       user: 'root',
-      password: '123456',
+      password: '',
       database: 'crud',
     });
 
