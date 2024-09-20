@@ -1,0 +1,11 @@
+Resumo da Função de Cada Parte
+controllers/: Controladores que processam requisições HTTP e delegam a lógica de negócio.
+routes/: Define os endpoints da API e mapeia URLs para os controladores.
+services/: Contém a lógica de negócio e interage com o banco de dados (via Prisma).
+middlewares/: Executa tarefas intermediárias, como autenticação ou validação, antes de chegar ao controlador.
+models/: Define a estrutura dos dados, representando as tabelas do banco de dados (gerenciado por Prisma).
+utils/: Funções auxiliares e ferramentas reutilizáveis.
+config/: Arquivos de configuração, como a inicialização do Prisma Client e configurações de banco de dados.
+app.js: Configuração principal do Express, carrega middlewares globais e rotas.
+server.js: Arquivo que inicializa o servidor e faz o app escutar em uma porta.
+Com essa organização, seu projeto fica bem estruturado e fácil de escalar à medida que cresce.
