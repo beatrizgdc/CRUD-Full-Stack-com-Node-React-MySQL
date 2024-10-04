@@ -3,7 +3,7 @@
 
 Este projeto é uma API RESTful desenvolvida com Node.js, Mongoose e MongoDB. A API permite realizar operações CRUD (Criar, Ler, Atualizar e Deletar) em um recurso chamado `Person`.
 
-- Video do projeto: [API RESTfull NodeJS, MongoDB e Mongoose]()
+- Video do projeto: [API RESTfull NodeJS, MongoDB e Mongoose](https://youtu.be/jXJ-Ax00pps)
 
 
 ## Funcionalidades
